@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Big Goal - Account Deletion</title>
+  <meta name="description" content="How to request account deletion for Big Goal, including deleted data, retained data, and processing time." />
+  <style>
+    :root {
+      --bg: #f6f5fb;
+      --surface: #ffffff;
+      --text: #17151f;
+      --muted: #5c5872;
+      --primary: #685ca8;
+      --primary-soft: #ece9fb;
+      --danger: #ad1e35;
+      --border: #e1deef;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1100px 500px at 20% -5%, #ebe7ff 0%, transparent 60%),
+        radial-gradient(700px 380px at 90% 5%, #f8e9f4 0%, transparent 62%),
+        var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.58;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 16px 56px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      gap: 6px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px;
+      box-shadow: 0 8px 24px rgba(53, 44, 95, 0.08);
+    }
+
+    .lang-btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 8px 13px;
+      font: inherit;
+      font-weight: 600;
+      color: var(--muted);
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .lang-btn.active {
+      background: var(--primary-soft);
+      color: var(--primary);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.6rem, 2.8vw, 2rem);
+      color: #4d4383;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 10px 20px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .danger {
+      color: var(--danger);
+      font-weight: 600;
+    }
+
+    .chip {
+      display: inline-block;
+      background: #f4f2ff;
+      color: #4f4680;
+      border: 1px solid #ddd8f2;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      margin-top: 14px;
+      box-shadow: 0 10px 32px rgba(36, 24, 86, 0.06);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .shot {
+      background: #faf9ff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px;
+      margin: 0;
+    }
+
+    .shot img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      border: 1px solid #ded9ef;
+    }
+
+    .shot figcaption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    a {
+      color: var(--primary);
+      font-weight: 600;
+      text-underline-offset: 2px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <h1 data-i18n="title">Big Goal - Richiesta eliminazione account</h1>
+        <p class="muted" data-i18n="subtitle">
+          Questa pagina spiega come richiedere l'eliminazione dell'account Big Goal e come vengono trattati i dati.
+        </p>
+      </div>
+      <nav class="lang-switch" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="it" type="button">IT</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+      </nav>
+    </header>
+
+    <section class="card">
+      <h2 data-i18n="how_title">Come richiedere l'eliminazione</h2>
+      <ol>
+        <li data-i18n="how_step_1">Apri l'app Big Goal e accedi con il tuo account.</li>
+        <li data-i18n="how_step_2">Dalla dashboard, tocca l'icona profilo in alto a destra.</li>
+        <li data-i18n="how_step_3">Apri My Account e seleziona Elimina account.</li>
+        <li data-i18n="how_step_4">Conferma la richiesta nella finestra di dialogo.</li>
+      </ol>
+      <p data-i18n="fallback_access">
+        Se non puoi accedere all'app, invia la richiesta all'email supporto/privacy indicando l'account da eliminare.
+      </p>
+      <p>
+        <a href="mailto:privacy@biggoal.app">privacy@biggoal.app</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="deleted_title">Dati eliminati</h2>
+      <ul>
+        <li data-i18n="deleted_1">Profilo utente (email, display name, photo URL).</li>
+        <li data-i18n="deleted_2">Goal, milestone, task e statistiche associate all'account.</li>
+        <li data-i18n="deleted_3">Dati applicativi associati direttamente all'utente.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="retention_title">Dati conservati e retention</h2>
+      <ul>
+        <li data-i18n="retention_1">La richiesta viene registrata con stato <span class="chip">PENDING</span>.</li>
+        <li data-i18n="retention_2">Retention standard: 30 giorni prima della cancellazione definitiva.</li>
+        <li data-i18n="retention_3">Alcuni log minimi possono essere conservati piu a lungo solo per obblighi legali, sicurezza o prevenzione abusi.</li>
+      </ul>
+      <p class="danger" data-i18n="retention_warning">
+        Durante la retention l'account viene disattivato. Al termine, i dati vengono eliminati in modo permanente.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="timing_title">Tempi di elaborazione</h2>
+      <p data-i18n="timing_body_1">La richiesta viene presa in carico subito dopo la conferma in-app o via email.</p>
+      <p data-i18n="timing_body_2">La cancellazione definitiva avviene al termine della retention indicata sopra.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="screens_title">Guida visiva (opzionale)</h2>
+      <p class="muted" data-i18n="screens_note">
+        Gli screenshot non sono obbligatori per Google Play, ma aiutano gli utenti a seguire il percorso corretto.
+      </p>
+      <div class="gallery" id="screenshots-gallery"></div>
+      <p class="muted hidden" id="screenshots-fallback" data-i18n="screens_empty">
+        Nessuno screenshot disponibile in questa lingua.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="contacts_title">Contatti</h2>
+      <p data-i18n="contacts_body">Per richieste privacy/supporto o per eliminazione account senza accesso all'app:</p>
+      <p>
+        <a href="mailto:privacy@biggoal.app">privacy@biggoal.app</a>
+      </p>
+      <p>
+        <a href="https://angelomarzocchi.github.io/Big-Goal-Policies/privacy-policy/" target="_blank" rel="noopener" data-i18n="privacy_link">
+          Leggi la Privacy Policy completa
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const translations = {
+      it: {
+        title: "Big Goal - Richiesta eliminazione account",
+        subtitle: "Questa pagina spiega come richiedere l'eliminazione dell'account Big Goal e come vengono trattati i dati.",
+        how_title: "Come richiedere l'eliminazione",
+        how_step_1: "Apri l'app Big Goal e accedi con il tuo account.",
+        how_step_2: "Dalla dashboard, tocca l'icona profilo in alto a destra.",
+        how_step_3: "Apri My Account e seleziona Elimina account.",
+        how_step_4: "Conferma la richiesta nella finestra di dialogo.",
+        fallback_access: "Se non puoi accedere all'app, invia la richiesta all'email supporto/privacy indicando l'account da eliminare.",
+        deleted_title: "Dati eliminati",
+        deleted_1: "Profilo utente (email, display name, photo URL).",
+        deleted_2: "Goal, milestone, task e statistiche associate all'account.",
+        deleted_3: "Dati applicativi associati direttamente all'utente.",
+        retention_title: "Dati conservati e retention",
+        retention_1: "La richiesta viene registrata con stato <span class=\"chip\">PENDING</span>.",
+        retention_2: "Retention standard: 30 giorni prima della cancellazione definitiva.",
+        retention_3: "Alcuni log minimi possono essere conservati piu a lungo solo per obblighi legali, sicurezza o prevenzione abusi.",
+        retention_warning: "Durante la retention l'account viene disattivato. Al termine, i dati vengono eliminati in modo permanente.",
+        timing_title: "Tempi di elaborazione",
+        timing_body_1: "La richiesta viene presa in carico subito dopo la conferma in-app o via email.",
+        timing_body_2: "La cancellazione definitiva avviene al termine della retention indicata sopra.",
+        screens_title: "Guida visiva (opzionale)",
+        screens_note: "Gli screenshot non sono obbligatori per Google Play, ma aiutano gli utenti a seguire il percorso corretto.",
+        screens_empty: "Nessuno screenshot disponibile in questa lingua.",
+        contacts_title: "Contatti",
+        contacts_body: "Per richieste privacy/supporto o per eliminazione account senza accesso all'app:",
+        privacy_link: "Leggi la Privacy Policy completa"
+      },
+      en: {
+        title: "Big Goal - Account deletion request",
+        subtitle: "This page explains how to request account deletion for Big Goal and how your data is handled.",
+        how_title: "How to request account deletion",
+        how_step_1: "Open Big Goal and sign in with your account.",
+        how_step_2: "From the dashboard, tap the profile icon in the top-right corner.",
+        how_step_3: "Open My Account and select Delete Account.",
+        how_step_4: "Confirm your request in the dialog.",
+        fallback_access: "If you cannot access the app, send your request to the support/privacy email and include the account to be deleted.",
+        deleted_title: "Data deleted",
+        deleted_1: "User profile (email, display name, photo URL).",
+        deleted_2: "Goals, milestones, tasks, and related user statistics.",
+        deleted_3: "Application data directly linked to your account.",
+        retention_title: "Data retained and retention period",
+        retention_1: "Your request is recorded with status <span class=\"chip\">PENDING</span>.",
+        retention_2: "Standard retention: 30 days before permanent deletion.",
+        retention_3: "Some minimal logs may be retained longer only for legal obligations, security, or abuse prevention.",
+        retention_warning: "During retention, the account is disabled. At the end of retention, data is permanently deleted.",
+        timing_title: "Processing timeline",
+        timing_body_1: "The request is processed immediately after in-app confirmation or email submission.",
+        timing_body_2: "Permanent deletion happens once the retention period ends.",
+        screens_title: "Visual guide (optional)",
+        screens_note: "Screenshots are not required by Google Play, but they help users follow the correct path.",
+        screens_empty: "No screenshots available in this language.",
+        contacts_title: "Contacts",
+        contacts_body: "For privacy/support requests or account deletion without app access:",
+        privacy_link: "Read the full Privacy Policy"
+      }
+    };
+
+    const screenshotConfig = {
+      it: [
+        { src: "images/it/dashboard.jpg", caption: "1) Dashboard: tocca l'avatar" },
+        { src: "images/it/myAccount.jpg", caption: "2) My Account: tocca Elimina account" },
+        { src: "images/it/delete.jpg", caption: "3) Conferma la richiesta" }
+      ],
+      en: [
+        { src: "images/en/dashboard.jpg", caption: "1) Dashboard: tap your avatar" },
+        { src: "images/en/myAccount.jpg", caption: "2) My Account: tap Delete Account" },
+        { src: "images/en/delete.jpg", caption: "3) Confirm your request" }
+      ]
+    };
+
+    const langButtons = document.querySelectorAll(".lang-btn");
+    const i18nNodes = document.querySelectorAll("[data-i18n]");
+    const gallery = document.getElementById("screenshots-gallery");
+    const fallback = document.getElementById("screenshots-fallback");
+
+    function renderScreenshots(lang) {
+      gallery.innerHTML = "";
+      fallback.classList.add("hidden");
+      const items = screenshotConfig[lang] || [];
+      let shown = 0;
+
+      items.forEach((item) => {
+        const fig = document.createElement("figure");
+        fig.className = "shot";
+
+        const img = document.createElement("img");
+        img.src = item.src;
+        img.alt = item.caption;
+        img.loading = "lazy";
+
+        const caption = document.createElement("figcaption");
+        caption.textContent = item.caption;
+
+        img.onload = () => {
+          shown += 1;
+          fig.appendChild(img);
+          fig.appendChild(caption);
+          gallery.appendChild(fig);
+        };
+
+        img.onerror = () => {
+          if (shown === 0 && item === items[items.length - 1]) {
+            fallback.classList.remove("hidden");
+          }
+        };
+      });
+
+      if (items.length === 0) {
+        fallback.classList.remove("hidden");
+      }
+    }
+
+    function applyLanguage(lang) {
+      const dict = translations[lang] || translations.it;
+      document.documentElement.lang = lang;
+
+      i18nNodes.forEach((node) => {
+        const key = node.getAttribute("data-i18n");
+        if (!dict[key]) {
+          return;
+        }
+        node.innerHTML = dict[key];
+      });
+
+      langButtons.forEach((button) => {
+        button.classList.toggle("active", button.dataset.lang === lang);
+      });
+
+      renderScreenshots(lang);
+    }
+
+    langButtons.forEach((button) => {
+      button.addEventListener("click", () => applyLanguage(button.dataset.lang));
+    });
+
+    applyLanguage("it");
+  </script>
+</body>
+</html>
