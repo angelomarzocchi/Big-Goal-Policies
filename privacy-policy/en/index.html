@@ -140,7 +140,7 @@
 
     <header>
       <h1>Privacy Policy – BigGoal</h1>
-      <p class="updated">Last updated: April 22, 2026</p>
+      <p class="updated">Last updated: August 20, 2026</p>
     </header>
 
     <div class="highlight-box">
@@ -173,7 +173,14 @@
     </ul>
     <p>
       The app does <strong>not collect</strong> location data, biometric data, financial
-      information, device contacts, or sensitive information of any kind.
+      information or device contacts, and never asks for special category data.
+    </p>
+    <p>
+      User-generated content is free text, however: a goal may contain — because the person writing
+      it chose to — information about health, personal beliefs, or other areas the GDPR treats as
+      <strong>special categories of data</strong> (Art. 9). Such content is neither requested nor
+      analysed for any purpose beyond operating the service, and section 4 describes the only case
+      in which it is processed by an artificial-intelligence system.
     </p>
 
     <!-- 3 -->
@@ -192,6 +199,11 @@
         <strong>Security and abuse prevention</strong> – maintaining the integrity and
         availability of the service.
       </li>
+      <li>
+        <strong>Artificial-intelligence features</strong> – generating plans, proposing a recovery
+        after a missed day, and labelling goals. These are described in detail, with their
+        respective legal bases, in <a href="#ai">section 4</a>.
+      </li>
     </ul>
     <p>
       The legal basis for processing is the performance of the contract/service requested by
@@ -199,35 +211,91 @@
     </p>
 
     <!-- 4 -->
-    <h2>4. Data Retention</h2>
+    <h2 id="ai">4. Artificial Intelligence</h2>
+    <p>
+      Some BigGoal features rely on a generative artificial-intelligence model. Processing is
+      carried out through <strong>Google Cloud Vertex AI</strong>, inside a project controlled by
+      the data controller and in a <strong>European region (europe-west4)</strong>. The content sent
+      is <strong>not used to train models</strong>.
+    </p>
+    <p>The features involved, and the data each one sends, are:</p>
+    <ul>
+      <li>
+        <strong>Plan generation</strong> – at the user's explicit request, when they choose to have
+        a plan created by the AI. The goal title, its duration, the weekly commitment and the
+        answers the user wrote to the clarifying questions are sent.
+      </li>
+      <li>
+        <strong>Rescue</strong> – at the user's explicit request, to recover a missed day. The goal
+        title, the titles of the tasks involved and any note about what got in the way are sent.
+      </li>
+      <li>
+        <strong>Automatic tags</strong> – only with the user's <strong>explicit consent</strong>.
+        <strong>Only the goal title</strong> is sent, truncated to 200 characters: never milestones,
+        tasks, notes, or anything written by other members of a shared goal. The model does not
+        generate text; it picks 1 to 3 labels from a fixed, predefined list.
+      </li>
+    </ul>
+    <p>
+      <strong>Legal basis.</strong> For plan generation and rescue it is the performance of the
+      service requested by the user (Art. 6(1)(b) GDPR): processing happens only when the user
+      deliberately starts the feature. For automatic tags, which apply to every goal rather than to
+      one request, the legal basis is <strong>consent</strong> (Art. 6(1)(a) GDPR and, where the
+      content falls within special categories of data, Art. 9(2)(a) GDPR).
+    </p>
+    <p>
+      <strong>Withdrawal.</strong> Consent to automatic tagging can be withdrawn at any time under
+      <em>Settings → Automatic tags</em>. Withdrawal applies across all devices and stops any new
+      processing immediately. The same screen can also <strong>delete the labels already
+      generated</strong>.
+    </p>
+    <p>
+      <strong>Refused content.</strong> The AI features refuse requests involving self-harm, harm to
+      other people, or illegal activity. No plan is produced in those cases; a technical event is
+      recorded containing only the category of the refusal and the account identifier —
+      <strong>never the text the user wrote</strong>.
+    </p>
+    <p>
+      <strong>Automated decisions.</strong> None of these features produces legal effects or
+      similarly significantly affects the user within the meaning of Art. 22 GDPR: generated content
+      is a proposal the user can edit, and labels only serve to filter their own goals in the app.
+    </p>
+
+    <!-- 5 -->
+    <h2>5. Data Retention</h2>
     <p>
       Data are retained for as long as necessary to provide the service, or until the user
       requests deletion of their account and associated content. In the absence of an explicit
       deletion request, data are kept while the account remains active.
     </p>
 
-    <!-- 5 -->
-    <h2>5. Data Transfers and Sharing</h2>
+    <!-- 6 -->
+    <h2>6. Data Transfers and Sharing</h2>
     <p>
       Data are stored and managed through <strong>Google Firebase</strong> cloud services
       (Firebase Authentication and Cloud Firestore), acting as a data processor under the
       Google Cloud / Firebase Terms of Service.
     </p>
     <p>
+      The artificial-intelligence features described in section 4 rely on <strong>Google Cloud
+      Vertex AI</strong>, also acting as a data processor, with processing carried out in a
+      European region.
+    </p>
+    <p>
       User data are <strong>never sold, shared, or disclosed</strong> to third parties for
       marketing or profiling purposes.
     </p>
 
-    <!-- 6 -->
-    <h2>6. Security</h2>
+    <!-- 7 -->
+    <h2>7. Security</h2>
     <p>
       We implement appropriate technical and organisational measures to protect personal data
       from unauthorised access, loss, alteration or disclosure, including encrypted transmission
       (HTTPS/TLS) and Firebase's built-in authentication controls.
     </p>
 
-    <!-- 7 -->
-    <h2>7. User Rights</h2>
+    <!-- 8 -->
+    <h2>8. User Rights</h2>
     <p>Users have the right to:</p>
     <ul>
       <li>access their personal data;</li>
@@ -235,6 +303,8 @@
       <li>request erasure of their data (right to be forgotten);</li>
       <li>object to or restrict processing in certain circumstances;</li>
       <li>request data portability;</li>
+      <li>withdraw a consent at any time, without affecting the lawfulness of processing carried
+          out before the withdrawal;</li>
       <li>
         lodge a complaint with the competent supervisory authority (e.g.
         <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">Garante Privacy</a>
@@ -246,24 +316,24 @@
       <a href="mailto:ososososato@gmail.com">ososososato@gmail.com</a>.
     </p>
 
-    <!-- 8 -->
-    <h2>8. Children</h2>
+    <!-- 9 -->
+    <h2>9. Children</h2>
     <p>
       The app is intended for users aged <strong>13 or older</strong>. If you become aware
       that a child under 13 has provided personal data through the app, please contact us so
       we can promptly remove it.
     </p>
 
-    <!-- 9 -->
-    <h2>9. Changes to This Policy</h2>
+    <!-- 10 -->
+    <h2>10. Changes to This Policy</h2>
     <p>
       We reserve the right to update this Privacy Policy at any time. Any changes will be
       reflected in the "Last updated" date at the top of this page. Continued use of the app
       after changes are published constitutes acceptance of the revised policy.
     </p>
 
-    <!-- 10 -->
-    <h2>10. Contact</h2>
+    <!-- 11 -->
+    <h2>11. Contact</h2>
     <p>
       For any questions or requests regarding this Privacy Policy:
       <a href="mailto:ososososato@gmail.com">ososososato@gmail.com</a>
