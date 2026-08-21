@@ -140,7 +140,7 @@
 
     <header>
       <h1>Privacy Policy – BigGoal</h1>
-      <p class="updated">Ultimo aggiornamento: 20 agosto 2026</p>
+      <p class="updated">Ultimo aggiornamento: 21 agosto 2026</p>
     </header>
 
     <div class="highlight-box">
@@ -171,6 +171,13 @@
         <strong>Contenuti inseriti dall'utente</strong> – obiettivi, sotto-obiettivi (milestone),
         attività (task), note e qualsiasi altro contenuto organizzativo creato dall'utente
         direttamente all'interno dell'app.
+      </li>
+      <li>
+        <strong>Dati diagnostici</strong> – in caso di arresto anomalo o di errore dell'app
+        vengono raccolti il modello e la versione del dispositivo, la versione dell'app, un
+        identificativo generato dall'installazione e il dettaglio tecnico dell'errore (per esempio
+        il motivo per cui un accesso non è andato a buon fine). Questi dati non contengono i
+        contenuti creati dall'utente e non vengono usati per identificarlo.
       </li>
     </ul>
     <p>
@@ -207,10 +214,16 @@
         dopo un giorno saltato ed etichettare gli obiettivi. Sono descritte in dettaglio, con le
         rispettive basi giuridiche, nella <a href="#ai">sezione 4</a>.
       </li>
+      <li>
+        <strong>Diagnostica e stabilità</strong> – individuare e correggere arresti anomali ed
+        errori dell'app, compresi i problemi di accesso segnalati dagli utenti.
+      </li>
     </ul>
     <p>
       La base giuridica del trattamento è l'esecuzione del contratto / del servizio richiesto
-      dall'utente (art. 6, par. 1, lett. b GDPR).
+      dall'utente (art. 6, par. 1, lett. b GDPR), a eccezione
+      dei dati diagnostici, trattati sulla base del legittimo interesse del titolare a mantenere
+      l'app funzionante e sicura (art. 6, par. 1, lett. f GDPR).
     </p>
 
     <!-- 4 -->
@@ -276,6 +289,10 @@
       assenza di una richiesta esplicita di cancellazione, i dati vengono mantenuti finché l'account
       risulta attivo.
     </p>
+    <p>
+      I dati diagnostici seguono un ciclo di vita proprio: sono conservati da Firebase Crashlytics
+      per un massimo di 90 giorni dalla segnalazione, dopodiché vengono eliminati automaticamente.
+    </p>
 
     <!-- 6 -->
     <h2>6. Trasferimento e condivisione dei dati</h2>
@@ -288,6 +305,11 @@
       Le funzioni di intelligenza artificiale descritte nella sezione 4 si appoggiano a
       <strong>Google Cloud Vertex AI</strong>, anch'esso responsabile esterno del trattamento, con
       elaborazione in regione europea.
+    </p>
+    <p>
+      I dati diagnostici descritti nella sezione 2 sono elaborati da
+      <strong>Firebase Crashlytics</strong>, anch'esso servizio Google che agisce come responsabile
+      esterno del trattamento.
     </p>
     <p>
       I dati <strong>non vengono venduti, ceduti o comunicati</strong> a terzi per finalità di

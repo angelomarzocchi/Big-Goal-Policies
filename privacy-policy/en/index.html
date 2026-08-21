@@ -140,7 +140,7 @@
 
     <header>
       <h1>Privacy Policy – BigGoal</h1>
-      <p class="updated">Last updated: August 20, 2026</p>
+      <p class="updated">Last updated: August 21, 2026</p>
     </header>
 
     <div class="highlight-box">
@@ -169,6 +169,12 @@
       <li>
         <strong>User-generated content</strong> – goals, sub-goals (milestones), tasks, notes
         and any other organizational content created directly by the user inside the app.
+      </li>
+      <li>
+        <strong>Diagnostic data</strong> – when the app crashes or hits an error, we collect the
+        device model and version, the app version, an installation-generated identifier, and the
+        technical detail of the error (for example, why a sign-in did not succeed). These data
+        contain none of the content created by the user and are not used to identify them.
       </li>
     </ul>
     <p>
@@ -204,10 +210,16 @@
         after a missed day, and labelling goals. These are described in detail, with their
         respective legal bases, in <a href="#ai">section 4</a>.
       </li>
+      <li>
+        <strong>Diagnostics and stability</strong> – finding and fixing crashes and errors in the
+        app, including the sign-in problems users report.
+      </li>
     </ul>
     <p>
       The legal basis for processing is the performance of the contract/service requested by
-      the user (Art. 6(1)(b) GDPR).
+      the user (Art. 6(1)(b) GDPR), except for
+      diagnostic data, processed on the basis of our legitimate interest in keeping the app working
+      and secure (Art. 6(1)(f) GDPR).
     </p>
 
     <!-- 4 -->
@@ -268,6 +280,10 @@
       requests deletion of their account and associated content. In the absence of an explicit
       deletion request, data are kept while the account remains active.
     </p>
+    <p>
+      Diagnostic data follow a lifecycle of their own: Firebase Crashlytics retains them for at
+      most 90 days after the report, after which they are deleted automatically.
+    </p>
 
     <!-- 6 -->
     <h2>6. Data Transfers and Sharing</h2>
@@ -280,6 +296,10 @@
       The artificial-intelligence features described in section 4 rely on <strong>Google Cloud
       Vertex AI</strong>, also acting as a data processor, with processing carried out in a
       European region.
+    </p>
+    <p>
+      The diagnostic data described in section 2 are processed by
+      <strong>Firebase Crashlytics</strong>, also a Google service acting as a data processor.
     </p>
     <p>
       User data are <strong>never sold, shared, or disclosed</strong> to third parties for
